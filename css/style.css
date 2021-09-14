@@ -63,6 +63,20 @@
     height: 500px;
     background: chocolate;
 }
+.debug .more{
+    height: 1rem;
+    background:darkblue;
+    display: block;
+}
+.debug .teams>.clearfix>div{
+    height: 500px;
+    background:darkgoldenrod;
+    border: 1px solid red;
+}
+.square{
+    background:darkorchid;
+    border: 1px solid burlywood;
+}
 /********************************************************
 * UTILITY *
 *********************************************************/
@@ -74,17 +88,29 @@
     width: 70%;
     margin: auto;
 }
+/* .container_70>section:not(.teams){
+    width: 70%;
+    margin: auto;
+} */ /* too specific, margin:auto conflict with .m_topbot inside sections. can't find a way to override it. */
 .m_topbot{
     margin: 5% 0;
+}
+.w_50{
+    width:50%;
 }
 .card{
     float:left;
     width: 30%;
 }
+.m_LR_0{
+    margin: auto 0;
+}
 /********************************************************
 * COMMON *
 *********************************************************/
-
+section.teams{
+    margin: 0;
+}
 
 
 /********************************************************
@@ -132,5 +158,21 @@
 }
 
 /* features section (3) */
+    /* EMPTY */
+/* teams section (4) */
+.brands_container{
+    float:left;
+    width:30%;
+}
+.square{
+    float:left;
+    height: 50%;
+    width: 50%;
+    padding: 5%;
+}
+.focus_brand{
+    float:left;
+    width:40%;
+}
 
-/* teams section (2) */
+/* cta section (4) */
