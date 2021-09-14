@@ -18,8 +18,8 @@
     height: 100px;
     background: aqua;
 }
-.debug .hero_section{
-    height: 600px;
+.debug .hero{
+    height: 100%;
     background: cadetblue;
 }
 .debug h1{
@@ -62,13 +62,13 @@
     width: 70%;
     margin: auto;
 }
-
+.m_topbot{
+    margin: 5% 0;
+}
 /********************************************************
 * COMMON *
 *********************************************************/
-div{
-    margin: 5% 0;
-}
+
 
 
 /********************************************************
@@ -77,7 +77,11 @@ div{
 /* navbar */
 
 /* hero section  */
-.hero_section > .container_80{
+.hero{
+    /* background-size: 100% 50%;
+    background-color: darkslategray; */ /* finding a way to shrink (only) the background */
+}
+.hero > .container_80{
     padding: 3rem 0;
 }
 .freetry_content{
@@ -95,7 +99,6 @@ div{
 .card{
     float:left;
     width: 30%;
-    margin: 2% 0;
 }
 .card:nth-child(2){
     margin-left: 5%;
