@@ -44,6 +44,10 @@
     background:darkgray;
 }
 .debug .card{
+    height: 500px;
+    background:coral;
+}
+.debug .plans .card{
     height:900px;
     background:darkkhaki;
 }
@@ -72,6 +76,10 @@
 }
 .m_topbot{
     margin: 5% 0;
+}
+.card{
+    float:left;
+    width: 30%;
 }
 /********************************************************
 * COMMON *
@@ -108,13 +116,8 @@
     margin: 10% 0;
 }
 /* billing plans section (1) */
-.card{
-    float:left;
-    width: 30%;
-}
 .card:nth-child(2){
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: auto 5%;
 }
 
 /* partner section (2) */
@@ -127,3 +130,7 @@
     float:left;
     width:45%;
 }
+
+/* features section (3) */
+
+/* teams section (2) */
