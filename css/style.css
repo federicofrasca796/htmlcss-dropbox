@@ -30,6 +30,10 @@
     height: 70px;
     background: rgba(30, 34, 54, 0.5);
 }
+.debug h3{
+    height: 50px;
+    background: rgba(63, 32, 66, 0.5);
+}
 .debug .freetry_content{
     height:300px;
     background: chocolate;
@@ -69,14 +73,36 @@
     display: block;
 }
 .debug .teams>.clearfix>div{
-    height: 500px;
+    height: 700px;
     background:darkgoldenrod;
     border: 1px solid red;
 }
-.square{
+.debug .square{
     background:darkorchid;
     border: 1px solid burlywood;
 }
+.debug .cta{
+    height: 400px;
+}
+.debug .cta>div{
+    height:200px;
+    background: chartreuse;
+}
+.debug .question{
+    height: 100px;
+    background: brown;
+}
+
+.debug .f_col{
+    height: 400px;
+    background: rosybrown;
+}
+.debug .lang{
+    height: 200px;
+    background: blueviolet;
+}
+
+
 /********************************************************
 * UTILITY *
 *********************************************************/
@@ -95,6 +121,9 @@
 .m_topbot{
     margin: 5% 0;
 }
+.pad_topbot{
+    padding: 10% 0;
+}
 .w_50{
     width:50%;
 }
@@ -102,9 +131,7 @@
     float:left;
     width: 30%;
 }
-.m_LR_0{
-    margin: auto 0;
-}
+
 /********************************************************
 * COMMON *
 *********************************************************/
@@ -119,10 +146,10 @@ section.teams{
 /* navbar */
 
 /* hero section  */
-.hero{
-    /* background-size: 100% 50%;
-    background-color: darkslategray; */ /* finding a way to shrink (only) the background */
-}
+/* .hero{
+    background-size: 100% 50%;
+    background-color: darkslategray; /* finding a way to shrink (only) the background
+} */
 .hero > .container_80{
     padding: 3rem 0;
 }
@@ -164,15 +191,74 @@ section.teams{
     float:left;
     width:30%;
 }
+.focus_brand{
+    float:left;
+    width:40%;
+}
 .square{
     float:left;
     height: 50%;
     width: 50%;
     padding: 5%;
 }
-.focus_brand{
-    float:left;
-    width:40%;
-}
 
 /* cta section (4) */
+.cta{
+    background-color: cadetblue;
+    position:relative;
+}
+.cta>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cta .red_txt{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 40%;
+}
+.cta .btn{
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+/* frequently asked section (4) */
+.frequently_asked > h2{
+    margin-bottom: 4rem;
+}
+.frequently_asked > .question{
+    border-top: 2px solid black;
+    padding: 1rem 0;
+    position:relative;
+}
+.frequently_asked > .question:last-child{
+    border-bottom: 2px solid black;
+}
+.question > h3{
+    display: inline-block;
+    max-width:90%;
+}
+.question > i {
+    display:inline-block;
+}
+
+/********************************************************
+* FOOTER *
+*********************************************************/
+#site_footer{
+    background: black;
+}
+.f_col{
+    float:left;
+    width: 15%;
+    margin-right: 5%;
+}
+.lang{
+    display: inline-block;
+}
+.lang > span{
+    line-height: 100%;
+}
