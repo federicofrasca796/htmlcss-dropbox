@@ -51,6 +51,14 @@
     height:300px;
     background:rgb(245, 232, 48);
 }
+.debug .partner>img{
+    height: 500px;
+    background:darkturquoise;
+}
+.debug .partner>div{
+    height: 500px;
+    background: chocolate;
+}
 /********************************************************
 * UTILITY *
 *********************************************************/
@@ -96,6 +104,10 @@
 /********************************************************
 * MAIN *
 *********************************************************/
+.plans{
+    margin: 10% 0;
+}
+/* billing plans section (1) */
 .card{
     float:left;
     width: 30%;
@@ -103,4 +115,15 @@
 .card:nth-child(2){
     margin-left: 5%;
     margin-right: 5%;
+}
+
+/* partner section (2) */
+.partner > img{
+    float:left;
+    width:50%;
+    margin-right: 5%;
+}
+.partner > div{
+    float:left;
+    width:45%;
 }
