@@ -26,19 +26,18 @@
     height: 100px;
     background-color: rgba(0, 0, 0, 0.267);
 }
-.container_80{
+/* .container_80{
     background-color: rgb(153, 136, 92);
-}
+} */
 .debug .freetry_content{
     height:300px;
     background-color: chocolate;
 }
 .debug .hero_img{
-    height: 400px;
+    height: 530px;
     background-color: darkcyan;
 
 }
-
 
 /********************************************************
 * UTILITY *
@@ -51,8 +50,12 @@
 /********************************************************
 * HEADER *
 *********************************************************/
+/* navbar */
 
 /* hero section  */
+.hero_section > .container_80{
+    padding: 3rem 0;
+}
 .freetry_content{
     float:left;
     width: 20%;
