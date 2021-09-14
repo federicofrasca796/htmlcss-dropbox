@@ -11,3 +11,53 @@
     clear: both;
 }
 
+/********************************************************
+* DEBUG *
+*********************************************************/
+.debug .navmenu{
+    height: 100px;
+    background-color: aqua;
+}
+.debug .hero_section{
+    height: 600px;
+    background-color: cadetblue;
+}
+.debug h1{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+.container_80{
+    background-color: rgb(153, 136, 92);
+}
+.debug .freetry_content{
+    height:300px;
+    background-color: chocolate;
+}
+.debug .hero_img{
+    height: 400px;
+    background-color: darkcyan;
+
+}
+
+
+/********************************************************
+* UTILITY *
+*********************************************************/
+.container_80{
+    width: 80%;
+    margin: auto;
+}
+
+/********************************************************
+* HEADER *
+*********************************************************/
+
+/* hero section  */
+.freetry_content{
+    float:left;
+    width: 20%;
+}
+.hero_img{
+    float:left;
+    width:80%;
+}
