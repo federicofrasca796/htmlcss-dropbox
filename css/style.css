@@ -18,7 +18,7 @@
     height: 100px;
     background: aqua;
 }
-.debug .hero{
+.debug .jumbotron{
     height: 100%;
     background: cadetblue;
 }
@@ -41,17 +41,16 @@
 .debug .hero_img{
     height: 530px;
     background: darkcyan;
-
 }
 .debug .billing{
     height:50px;
     background:darkgray;
 }
-.debug .card{
+.debug .col_30{
     height: 500px;
     background:coral;
 }
-.debug .plans .card{
+.debug .plans .col_30{
     height:900px;
     background:darkkhaki;
 }
@@ -127,7 +126,15 @@
 .w_50{
     width:50%;
 }
-.card{
+.col_50{
+    float:left;
+    width:50%;
+}
+.col_45{
+    float:left;
+    width:45%;
+}
+.col_30{
     float:left;
     width: 30%;
 }
@@ -150,7 +157,7 @@ section.teams{
     background-size: 100% 50%;
     background-color: darkslategray; /* finding a way to shrink (only) the background
 } */
-.hero > .container_80{
+.jumbotron > .container_80{
     padding: 3rem 0;
 }
 .freetry_content{
@@ -169,19 +176,13 @@ section.teams{
     margin: 10% 0;
 }
 /* billing plans section (1) */
-.card:nth-child(2){
+.col_30:nth-child(2){
     margin: auto 5%;
 }
 
 /* partner section (2) */
 .partner > img{
-    float:left;
-    width:50%;
     margin-right: 5%;
-}
-.partner > div{
-    float:left;
-    width:45%;
 }
 
 /* features section (3) */
