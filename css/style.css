@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans',sans-serif;
+    color: black;
 }
 
 .clearfix::after{
@@ -16,7 +17,7 @@
 *********************************************************/
 .debug .navmenu{
     height: 100px;
-    background: aqua;
+    /* background: aqua; */
 }
 .debug .jumbotron{
     height: 100%;
@@ -111,10 +112,6 @@
     width: 70%;
     margin: auto;
 }
-/* .container_70>section:not(.teams){
-    width: 70%;
-    margin: auto;
-} */ /* too specific, margin:auto conflict with .m_topbot inside sections. can't find a way to override it. */
 .m_topbot{
     margin: 5% 0;
 }
@@ -136,6 +133,13 @@ div[class^="col_"]{
 .col_30{
     width: 30%;
 }
+.btn{
+    padding: .6rem 2rem;
+}
+.btn_blue{
+    background-color: blue;
+    color: white;
+}
 
 /********************************************************
 * COMMON *
@@ -143,13 +147,43 @@ div[class^="col_"]{
 section.teams{
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
 
 /********************************************************
 * HEADER *
 *********************************************************/
+.navmenu{
+    padding: 0 2%;
+    height: 100px;
+    line-height: 100px;
+    background: white;
+}
 /* navbar */
-
+.side_left,
+.side_right{
+    float:left;
+    width:50%;
+}
+.nav_list{
+    list-style: none;
+        margin: auto -2%;
+}
+.side_right .nav_list{
+    text-align: right;
+}
+.nav_list > li{
+    margin: auto 2%;
+    display: inline-block;
+}
+.nav_list .logo{
+    width:15%;
+}
+.logo>img{
+    vertical-align: text-bottom;
+    width:100%;
+}
 /* hero section  */
 /* .hero{
     background-size: 100% 50%;
@@ -166,6 +200,8 @@ section.teams{
     float:left;
     width:80%;
 }
+
+
 
 /********************************************************
 * MAIN *
