@@ -126,16 +126,16 @@
 .w_50{
     width:50%;
 }
-.col_50{
+div[class^="col_"]{
     float:left;
+}
+.col_50{
     width:50%;
 }
 .col_45{
-    float:left;
     width:45%;
 }
 .col_30{
-    float:left;
     width: 30%;
 }
 
