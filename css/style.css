@@ -113,11 +113,20 @@
     width: 70%;
     margin: auto;
 }
-.m_topbot{
+.m_10_0{
+    margin: 10% 0;
+}
+.m_5_0{
     margin: 5% 0;
 }
 .pad_topbot{
     padding: 10% 0;
+}
+.pad_10{
+    padding: 10%;
+}
+.pad_1rem_0{
+    padding: 1rem 0;
 }
 .w_50{
     width:50%;
@@ -137,6 +146,9 @@ div[class^="col_"]{
 .col_30{
     width: 30%;
 }
+.gray_txt{
+    color:gray;
+}
 .btn{
     padding: .6rem 2rem;
 }
@@ -154,16 +166,16 @@ div[class^="col_"]{
     vertical-align: middle;
 }
 .circle_select{
-    border: 5px solid blue;
-}
-section.teams{
-    margin: 0;
+    border: 6px solid blue;
 }
 p.caption{
     font-size: .9rem;
     margin: .5rem 0 1rem;
 }
-
+.hyperlink{
+    text-decoration: underline;
+    color: blue;
+}
 
 /********************************************************
 * COMMON *
@@ -175,12 +187,18 @@ h1{
 h2{
     font-size: 2.5rem;
 }
+h3{
+    font-size: 1.5rem;
+}
 a{
     text-decoration: none;
     display: inline-block;
 }
 p{
     margin-bottom: 2rem;
+}
+i{
+    margin-right: .5rem;
 }
 
 /********************************************************
@@ -200,7 +218,7 @@ p{
 }
 .nav_list{
     list-style: none;
-        margin: auto -2%;
+    margin: auto -2%;
 }
 .side_right .nav_list{
     text-align: right;
@@ -254,6 +272,36 @@ a[href="#plans"]{
 .billing > span{
     margin-right: 2%;
 }
+.card{
+    border: 1px solid gray;
+    height: 80vh;
+}
+.card_header{
+    text-align: center;
+    padding: 3%;
+    border-bottom: 1px solid gray;
+}
+ul.plan_info{
+    list-style: none;
+    
+}
+.fa_font{
+    font-family: "Font Awesome 5 Free";
+    vertical-align: middle;
+}
+.user::before{
+    content: "\f007";
+    font-weight: 400;
+
+}
+.folder::before{
+    content: "\f07b";
+    font-weight: 400;
+}
+.pen::before{
+    content: "\f304";
+    font-weight: 900;
+}
 
 /* partner section (2) */
 .partner > img{
@@ -263,6 +311,9 @@ a[href="#plans"]{
 /* features section (3) */
     /* EMPTY */
 /* teams section (4) */
+section.teams{
+    margin: 0;
+}
 .brands_container{
     float:left;
     width:30%;
