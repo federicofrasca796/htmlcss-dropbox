@@ -144,7 +144,18 @@ div[class^="col_"]{
     background-color: blue;
     color: white;
 }
-
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: inline-block;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+.circle_select{
+    border: 5px solid blue;
+}
 section.teams{
     margin: 0;
 }
@@ -160,6 +171,9 @@ p.caption{
 h1{
     font-size: 4.5rem;
     padding: 5% 0;
+}
+h2{
+    font-size: 2.5rem;
 }
 a{
     text-decoration: none;
@@ -230,12 +244,15 @@ a[href="#plans"]{
 /********************************************************
 * MAIN *
 *********************************************************/
+/* billing plans section (1) */
 .plans{
     margin: 10% 0;
 }
-/* billing plans section (1) */
 .plans .col_30:nth-child(2){
     margin: auto 5%;
+}
+.billing > span{
+    margin-right: 2%;
 }
 
 /* partner section (2) */
