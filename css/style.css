@@ -127,7 +127,6 @@ div[class^="col_"]{
 }
 .col_65{
     width:65%;
-    margin-right: 5%;
 }
 .col_50{
     width:50%;
@@ -146,29 +145,40 @@ div[class^="col_"]{
     color: white;
 }
 
-/********************************************************
-* COMMON *
-*********************************************************/
 section.teams{
     margin: 0;
 }
+p.caption{
+    font-size: .9rem;
+    margin: .5rem 0 1rem;
+}
+
+
+/********************************************************
+* COMMON *
+*********************************************************/
 h1{
     font-size: 4.5rem;
+    padding: 5% 0;
 }
 a{
     text-decoration: none;
+    display: inline-block;
+}
+p{
+    margin-bottom: 2rem;
 }
 
 /********************************************************
 * HEADER *
 *********************************************************/
+/* navbar */
 .navmenu{
     padding: 0 2%;
     height: 100px;
     line-height: 100px;
     background: white;
 }
-/* navbar */
 .side_left,
 .side_right{
     float:left;
@@ -192,21 +202,27 @@ a{
     vertical-align: text-bottom;
     width:100%;
 }
+li .btn{
+    display: inline;
+}
+
 /* jumbo */
-/* .jumbotron{
-    background-size: 100% 50%;
-    background-color: darkslategray;
-} */ */
-.jumbotron > .container_80{
-    padding: 3rem 0;
+.jumbotron{
+    background: linear-gradient(180deg,#B4D0E7 90%, rgba(255,255,255,0) 10%);
 }
-.freetry_content{
-    float:left;
-    width: 20%;
+
+.jumbotron .col_65{
+    margin-left: 2%;
 }
-.hero_img{
-    float:left;
-    width:80%;
+.jumbotron img{
+    width:100%;
+    filter: drop-shadow(10px 10px 15px rgba(100,100,100,0.2));
+}
+a[href="#plans"]{
+    margin: 5% 0;
+}
+.fa-arrow-down{
+    font-size: 3rem;
 }
 
 
@@ -218,7 +234,7 @@ a{
     margin: 10% 0;
 }
 /* billing plans section (1) */
-.col_30:nth-child(2){
+.plans .col_30:nth-child(2){
     margin: auto 5%;
 }
 
