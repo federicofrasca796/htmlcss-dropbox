@@ -16,9 +16,9 @@
 /********************************************************
 * DEBUG *
 *********************************************************/
-.debug .navmenu{
+/* .debug .navmenu{
     height: 100px;
-    /* background: aqua; */
+    background: aqua;
 }
 .debug .jumbotron{
     height: 100%;
@@ -99,7 +99,7 @@
 .debug .lang{
     height: 200px;
     background: blueviolet;
-}
+} */
 
 
 /********************************************************
@@ -152,6 +152,9 @@ div[class^="col_"]{
 section.teams{
     margin: 0;
 }
+h1{
+    font-size: 4.5rem;
+}
 a{
     text-decoration: none;
 }
@@ -189,11 +192,11 @@ a{
     vertical-align: text-bottom;
     width:100%;
 }
-/* hero section  */
-/* .hero{
+/* jumbo */
+/* .jumbotron{
     background-size: 100% 50%;
-    background-color: darkslategray; /* finding a way to shrink (only) the background
-} */
+    background-color: darkslategray;
+} */ */
 .jumbotron > .container_80{
     padding: 3rem 0;
 }
