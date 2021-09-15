@@ -122,8 +122,8 @@
 .pad_topbot{
     padding: 10% 0;
 }
-.pad_10{
-    padding: 10%;
+.pad_2rem{
+    padding: 2rem;
 }
 .pad_1rem_0{
     padding: 1rem 0;
@@ -134,8 +134,8 @@
 div[class^="col_"]{
     float:left;
 }
-.col_65{
-    width:65%;
+.col_70{
+    width:70%;
 }
 .col_50{
     width:50%;
@@ -151,6 +151,7 @@ div[class^="col_"]{
 }
 .btn{
     padding: .6rem 2rem;
+    text-align: center;
 }
 .btn_blue{
     background-color: blue;
@@ -168,7 +169,7 @@ div[class^="col_"]{
 .circle_select{
     border: 6px solid blue;
 }
-p.caption{
+.caption{
     font-size: .9rem;
     margin: .5rem 0 1rem;
 }
@@ -176,7 +177,39 @@ p.caption{
     text-decoration: underline;
     color: blue;
 }
+.border_bot{
+    border-bottom: 1px solid gray;
+}
 
+/* list icons */
+::before{
+    font-family: "Font Awesome 5 Free";
+}
+.user::before{
+    content: "\f007";
+}
+.user_plus::before{
+    content:"\f234";
+    font-weight: 900;
+}
+.team::before{
+    content: "\f1ad";
+}
+.folder::before{
+    content: "\f07b";
+}
+.pen::before{
+    content: "\f304";
+    font-weight: 900;
+}
+.smile::before{
+    content: "\f118";
+}
+.check>li::before{
+    content:"\f00c";
+    font-weight: 900;
+    color: blue;
+}
 /********************************************************
 * COMMON *
 *********************************************************/
@@ -188,7 +221,11 @@ h2{
     font-size: 2.5rem;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    padding: 0 0 1rem;
+}
+h4{
+    padding: 0 0 .5rem;
 }
 a{
     text-decoration: none;
@@ -200,6 +237,7 @@ p{
 i{
     margin-right: .5rem;
 }
+
 
 /********************************************************
 * HEADER *
@@ -220,12 +258,12 @@ i{
     list-style: none;
     margin: auto -2%;
 }
-.side_right .nav_list{
-    text-align: right;
-}
 .nav_list > li{
     margin: auto 2%;
     display: inline-block;
+}
+.side_right .nav_list{
+    text-align: right;
 }
 .nav_list .logo{
     width:15%;
@@ -242,9 +280,8 @@ li .btn{
 .jumbotron{
     background: linear-gradient(180deg,#B4D0E7 90%, rgba(255,255,255,0) 10%);
 }
-
-.jumbotron .col_65{
-    margin-left: 2%;
+.jumbotron .col_70{
+    padding-left: 2%;
 }
 .jumbotron img{
     width:100%;
@@ -262,11 +299,16 @@ a[href="#plans"]{
 /********************************************************
 * MAIN *
 *********************************************************/
+main ul{
+    list-style: none;
+    padding-left: 20px;
+    text-indent: -20px;
+}
 /* billing plans section (1) */
 .plans{
     margin: 10% 0;
 }
-.plans .col_30:nth-child(2){
+.plans .card_long:nth-child(2){
     margin: auto 5%;
 }
 .billing > span{
@@ -274,33 +316,32 @@ a[href="#plans"]{
 }
 .card{
     border: 1px solid gray;
-    height: 80vh;
+}
+.card_long{
+    height: 90vh;
+}
+.plan_title{
+    padding: 1rem 0;
 }
 .card_header{
     text-align: center;
-    padding: 3%;
-    border-bottom: 1px solid gray;
+    padding: 1rem;
 }
-ul.plan_info{
-    list-style: none;
-    
+.card li{
+    padding: 1rem 0;
 }
-.fa_font{
-    font-family: "Font Awesome 5 Free";
-    vertical-align: middle;
+.plan_info ,
+.trybuy_now > *{
+    margin: 2rem 0;
 }
-.user::before{
-    content: "\f007";
-    font-weight: 400;
-
+.card .btn{
+    display: block;
 }
-.folder::before{
-    content: "\f07b";
-    font-weight: 400;
+.trybuy_now ~ div.border_bot{
+    width:20%;
 }
-.pen::before{
-    content: "\f304";
-    font-weight: 900;
+.features{
+    padding: 4rem 0;
 }
 
 /* partner section (2) */
