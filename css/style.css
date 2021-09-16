@@ -115,8 +115,8 @@
 .m_10_0{
     margin: 10% 0;
 }
-.m_5_0{
-    margin: 5% 0;
+.m_3rem_0{
+    margin: 3rem 0;
 }
 .m_bot_2rem{
     margin-bottom: 2rem;
@@ -245,7 +245,7 @@ a{
     text-decoration: none;
 }
 p,a{
-    font-size: 20px;
+    font-size: 21px;
 }
 i{
     margin-right: .5rem;
@@ -365,14 +365,12 @@ main ul{
     padding-top: 2rem;
 }
 /* partner section (2) */
-.partner{
-    margin-right: 5%;
-}
 .partner_cont{
-    padding: 2rem 0 0 5%;
+    padding: 2rem 4.5rem;
 }
 .partner_cont p{
     padding: 2rem 0;
+    line-height: 180%;
 }
 
 
