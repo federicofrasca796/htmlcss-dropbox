@@ -231,10 +231,10 @@ h1{
     padding: 5% 0;
 }
 h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 h3{
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 0 0 1rem;
 }
 h4{
@@ -316,14 +316,18 @@ main ul{
     padding-left: 20px;
     text-indent: -20px;
 }
+.card.col_30:nth-child(2),
+.features .col_30:nth-child(2) {
+    margin: auto 5%;
+}
+
+
 /* billing plans section (1) */
 .plans{
     margin: 10% 0;
 }
 
-.plans .card_long:nth-child(2){
-    margin: auto 5%;
-}
+
 .plans li,
 .plans p,
 .plans a{
@@ -359,7 +363,7 @@ main ul{
     width:20%;
 }
 .features{
-    padding: 4rem 0;
+    padding: 10% 0;
 }
 .card_pro p{
     padding-top: 2rem;
