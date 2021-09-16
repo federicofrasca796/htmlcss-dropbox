@@ -380,9 +380,13 @@ main ul{
 
 /* features section (3) */
     /* EMPTY */
+
 /* teams section (4) */
 section.teams{
     margin: 0;
+}
+.brands_stripe{
+    height: 400px;
 }
 .brands_container{
     float:left;
@@ -397,6 +401,36 @@ section.teams{
     height: 50%;
     width: 50%;
     padding: 5%;
+}
+.square>img{
+    width:100%;
+    filter:invert();
+}
+.designit{
+    background: #A2D39B;
+}
+
+.arizona_uni{
+    background: #61082B;
+    
+}
+.uf_florida{
+    background: #0592CE;
+}
+.topps{
+    background: #FF1C24;
+}
+.wbr_bycicle{
+    background: #D5001F;
+}
+.hearsy{
+    background: #B4D0E7;
+}
+.lonely_planet{
+    background: #0F2481;
+}
+.clear_channel{
+    background: #FED830;
 }
 
 /* cta section (4) */
