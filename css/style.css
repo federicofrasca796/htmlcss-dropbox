@@ -121,11 +121,11 @@
 .m_bot_2rem{
     margin-bottom: 2rem;
 }
-.pad_10rem_0{
-    padding: 10rem 0;
-}
 .pad_2rem{
     padding: 2rem;
+}
+.pad_10rem_0{
+    padding: 10rem 0;
 }
 .pad_1rem_0{
     padding: 1rem 0;
@@ -267,7 +267,7 @@ a{
     display: inline-block;
     text-decoration: none;
 }
-p,a{
+p,a,li{
     font-size: 21px;
 }
 i{
@@ -508,12 +508,31 @@ section.teams{
 #site_footer{
     background: black;
 }
+#site_footer h4,
+#site_footer a{
+    color: white;
+}
+#site_footer li{
+    list-style: none;
+    line-height: 200%;
+}
+.links{
+    padding: 8% 0;
+}
 .links > .col_15{
     margin-right: 5%;
 }
+
 .lang{
     display: inline-block;
+    padding: 5% 0;
+    border-top: 2px solid #464646;
+}
+.lang>*{
+    color: #464646;
 }
 .lang > span{
-    line-height: 100%;
+    font-weight: 600;
+    /* line-height: 100%; */
+    padding: 0 2px;
 }
