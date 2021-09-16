@@ -154,7 +154,9 @@ div[class^="col_"] > img{
 .gray_txt{
     color:gray;
 }
-
+div.border_bot:empty{
+    width:20%;
+}
 /* #region buttons */
 .btn{
     padding: .6rem 2rem;
@@ -366,9 +368,6 @@ i{
 .plans .btn{
     display: block;
 }
-.trybuy_now ~ div.border_bot{
-    width:20%;
-}
 .features{
     padding: 10% 0;
 }
@@ -393,16 +392,22 @@ section.teams{
     margin: 0;
 }
 .brands_stripe{
-    height: 500px;
+    height: 609.297px;
 }
 .brands_container{
-    float:left;
-    width:500px;
-    height:100%;
+    float: left;
+    width: 30%;
+    height: 100%;
 }
 .focus_brand{
-    float:left;
-    width:40%;
+    float: left;
+    width: 40%;
+    height: 100%;
+    padding: 3rem;
+    background: #F5F5F5;
+}
+.focus_brand > img{
+    width: 200px;
 }
 .square{
     float:left;
@@ -421,10 +426,8 @@ section.teams{
 .designit{
     background: #A2D39B;
 }
-
 .arizona_uni{
-    background: #61082B;
-    
+    background: #61082B; 
 }
 .uf_florida{
     background: #0592CE;
