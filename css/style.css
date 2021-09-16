@@ -408,7 +408,6 @@ section.teams{
     float:left;
     height: 50%;
     width: 50%;
-    /* padding: 5%; */
     position: relative;
 }
 .square>img{
@@ -436,7 +435,7 @@ section.teams{
 .wbr_bycicle{
     background: #D5001F;
 }
-.hearst{
+.hearst_corp{
     background: #B4D0E7;
 }
 .lonely_planet{
