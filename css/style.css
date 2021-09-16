@@ -119,6 +119,9 @@
 .m_5_0{
     margin: 5% 0;
 }
+.m_bot_2rem{
+    margin-bottom: 2rem;
+}
 .pad_topbot{
     padding: 10% 0;
 }
@@ -231,9 +234,9 @@ a{
     text-decoration: none;
     display: inline-block;
 }
-p{
-    margin-bottom: 2rem;
-}
+/* p{
+    padding: 1rem 0;
+} */
 i{
     margin-right: .5rem;
 }
@@ -272,7 +275,7 @@ i{
     vertical-align: text-bottom;
     width:100%;
 }
-li .btn{
+.nav_list > li .btn{
     display: inline;
 }
 
@@ -304,6 +307,10 @@ main ul{
     padding-left: 20px;
     text-indent: -20px;
 }
+main li,
+main p{
+    font-size: .9rem;
+}
 /* billing plans section (1) */
 .plans{
     margin: 10% 0;
@@ -316,9 +323,6 @@ main ul{
 }
 .card{
     border: 1px solid gray;
-}
-.card_long{
-    height: 90vh;
 }
 .plan_title{
     padding: 1rem 0;
@@ -343,7 +347,12 @@ main ul{
 .features{
     padding: 4rem 0;
 }
-
+.features .hide{
+    visibility: hidden;
+}
+.card_pro p{
+    padding-top: 2rem;
+}
 /* partner section (2) */
 .partner > img{
     margin-right: 5%;
