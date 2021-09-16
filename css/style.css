@@ -154,7 +154,8 @@ div[class^="col_"] > img{
 .gray_txt{
     color:gray;
 }
-/* buttons */
+
+/* #region buttons */
 .btn{
     padding: .6rem 2rem;
     text-align: center;
@@ -166,6 +167,7 @@ div[class^="col_"] > img{
 .btn_outline{
     border: 1px solid black;
 }
+/* #endregion buttons */
 
 .circle{
     width: 25px;
@@ -191,35 +193,43 @@ div[class^="col_"] > img{
     border-bottom: 1px solid gray;
 }
 
-/* list icons */
-::before{
+/* #region icons */
+::marker,::before{
     font-family: "Font Awesome 5 Free";
+    font-size:1em;
 }
+    /* befores */
 .user::before{
     content: "\f007";
-}
-.user_plus::before{
-    content:"\f234";
-    font-weight: 900;
 }
 .team::before{
     content: "\f1ad";
 }
-.folder::before{
+    /* markers */
+.user::marker{
+    content: "\f007";
+}
+.user_plus::marker{
+    content:"\f234";
+    font-weight: 900;
+}
+.folder::marker{
     content: "\f07b";
 }
-.pen::before{
+.pen::marker{
     content: "\f304";
     font-weight: 900;
 }
-.smile::before{
+.smile::marker{
     content: "\f118";
 }
-.check>li::before{
+.check>li::marker{
     content:"\f00c";
     font-weight: 900;
     color: blue;
 }
+/* #endregion icons */
+
 /********************************************************
 * COMMON *
 *********************************************************/
@@ -311,11 +321,6 @@ i{
 /********************************************************
 * MAIN *
 *********************************************************/
-main ul{
-    list-style: none;
-    padding-left: 20px;
-    text-indent: -20px;
-}
 .card.col_30:nth-child(2),
 .features .col_30:nth-child(2) {
     margin: auto 5%;
@@ -327,7 +332,12 @@ main ul{
     margin: 10% 0;
 }
 
-
+.plans ul{
+    padding-left:1em;
+}
+.plans li{
+    padding: 1rem 1rem 1rem 10px;
+}
 .plans li,
 .plans p,
 .plans a{
@@ -340,7 +350,7 @@ main ul{
     border: 1px solid gray;
 }
 .card_long{
-    min-height: 1400px;
+    min-height: 1200px;
 }
 .plan_title{
     padding: 1rem 0;
@@ -349,14 +359,11 @@ main ul{
     text-align: center;
     padding: 1rem;
 }
-.card li{
-    padding: 1rem 0;
-}
 .plan_info ,
 .trybuy_now > *{
     margin: 2rem 0;
 }
-.card .btn{
+.plans .btn{
     display: block;
 }
 .trybuy_now ~ div.border_bot{
@@ -386,11 +393,12 @@ section.teams{
     margin: 0;
 }
 .brands_stripe{
-    height: 400px;
+    height: 500px;
 }
 .brands_container{
     float:left;
-    width:30%;
+    width:500px;
+    height:100%;
 }
 .focus_brand{
     float:left;
@@ -400,11 +408,16 @@ section.teams{
     float:left;
     height: 50%;
     width: 50%;
-    padding: 5%;
+    /* padding: 5%; */
+    position: relative;
 }
 .square>img{
-    width:100%;
+    width:60%;
     filter:invert();
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .designit{
     background: #A2D39B;
@@ -423,7 +436,7 @@ section.teams{
 .wbr_bycicle{
     background: #D5001F;
 }
-.hearsy{
+.hearst{
     background: #B4D0E7;
 }
 .lonely_planet{
