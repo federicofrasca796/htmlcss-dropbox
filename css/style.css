@@ -154,6 +154,9 @@ div[class^="col_"] > img{
 .col_30{
     width: 30%;
 }
+.col_15{
+    width: 15%;
+}
 .gray_txt{
     color:gray;
 }
@@ -478,10 +481,10 @@ section.teams{
 
 
 /* frequently asked section (4) */
-.frequently_asked > h2{
-    margin-bottom: 4rem;
-}
 .question{
+    margin: 4rem 0 15%;
+}
+.question>div{
     padding: 2rem 0;
     position:relative;
 }
@@ -489,11 +492,10 @@ section.teams{
     display: inline-block;
     max-width:90%;
 }
-.question:first-child{
+.question>div:first-child{
     border-top: 1.5px solid lightgray;
-    background: red;
 }
-.question > .reveal_arrow {
+.question .reveal_arrow {
     position:absolute;
     right: 2rem;
     top: 50%;
@@ -506,9 +508,7 @@ section.teams{
 #site_footer{
     background: black;
 }
-.f_col{
-    float:left;
-    width: 15%;
+.links > .col_15{
     margin-right: 5%;
 }
 .lang{
