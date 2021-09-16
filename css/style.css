@@ -257,6 +257,7 @@ h3{
     padding: 0 0 1rem;
 }
 h4{
+    font-size: 1.4rem;
     padding: 0 0 .5rem;
 }
 a{
@@ -480,20 +481,23 @@ section.teams{
 .frequently_asked > h2{
     margin-bottom: 4rem;
 }
-.frequently_asked > .question{
-    border-top: 2px solid black;
-    padding: 1rem 0;
+.question{
+    padding: 2rem 0;
     position:relative;
-}
-.frequently_asked > .question:last-child{
-    border-bottom: 2px solid black;
 }
 .question > h3{
     display: inline-block;
     max-width:90%;
 }
-.question > i {
-    display:inline-block;
+.question:first-child{
+    border-top: 1.5px solid lightgray;
+    background: red;
+}
+.question > .reveal_arrow {
+    position:absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /********************************************************
