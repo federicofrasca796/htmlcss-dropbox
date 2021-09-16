@@ -327,6 +327,9 @@ main p{
 .card{
     border: 1px solid gray;
 }
+.card_long{
+    min-height: 1400px;
+}
 .plan_title{
     padding: 1rem 0;
 }
@@ -349,9 +352,6 @@ main p{
 }
 .features{
     padding: 4rem 0;
-}
-.features .hide{
-    visibility: hidden;
 }
 .card_pro p{
     padding-top: 2rem;
