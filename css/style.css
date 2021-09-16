@@ -121,8 +121,8 @@
 .m_bot_2rem{
     margin-bottom: 2rem;
 }
-.pad_topbot{
-    padding: 10% 0;
+.pad_10rem_0{
+    padding: 10rem 0;
 }
 .pad_2rem{
     padding: 2rem;
@@ -467,6 +467,11 @@ section.teams{
 /* cta section (4) */
 .cta{
     background-color: #B4D0E7;
+}
+.cta h2{
+    color: #61082B;
+    font-weight: 800;
+    padding: 0 30% 0 0;
 }
 
 
