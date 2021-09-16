@@ -131,22 +131,25 @@
     padding: 1rem 0;
 }
 .w_50{
-    width:50%;
+    width: 50%;
+}
+.w_100{
+    width:100%;
 }
 div[class^="col_"]{
     float:left;
 }
 div[class^="col_"] > img{
-    width:100%;
+    width: 100%;
 }
 .col_70{
-    width:70%;
+    width: 70%;
 }
 .col_50{
-    width:50%;
+    width: 50%;
 }
 .col_45{
-    width:45%;
+    width: 45%;
 }
 .col_30{
     width: 30%;
@@ -157,7 +160,7 @@ div[class^="col_"] > img{
 div.border_bot:empty{
     width:4rem;
 }
-/* #region buttons */
+/* #region Buttons */
 .btn{
     padding: .6rem 2rem;
     text-align: center;
@@ -169,7 +172,10 @@ div.border_bot:empty{
 .btn_outline{
     border: 1px solid black;
 }
-/* #endregion buttons */
+.btn_white{
+    background-color: white;
+}
+/* #endregion Buttons */
 
 .circle{
     width: 25px;
@@ -296,7 +302,6 @@ i{
 }
 .logo>img{
     vertical-align: text-bottom;
-    width:100%;
 }
 .nav_list > li .btn{
     display: inline;
@@ -366,9 +371,9 @@ i{
 .trybuy_now > *{
     margin: 2rem 0;
 }
-.plans .btn{
+/* .plans .btn{
     display: block;
-}
+} */
 .features{
     padding: 10% 0;
 }
@@ -461,26 +466,10 @@ section.teams{
 
 /* cta section (4) */
 .cta{
-    background-color: cadetblue;
-    position:relative;
+    background-color: #B4D0E7;
 }
-.cta>div{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.cta .red_txt{
-    position:absolute;
-    top:0;
-    left:0;
-    width: 40%;
-}
-.cta .btn{
-    position:absolute;
-    top:0;
-    right:0;
-}
+
+
 
 /* frequently asked section (4) */
 .frequently_asked > h2{
