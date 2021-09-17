@@ -554,7 +554,7 @@ section.teams{
         display: none;
         padding: 2rem 10% 0 0;
     }
-    .question > div.border_bot:hover + .pop_answer{
+    .question > div.border_bot:hover .pop_answer{
         display: block;
     }
     .question > div.border_bot:hover .reveal_arrow{
