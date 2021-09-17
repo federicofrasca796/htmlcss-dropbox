@@ -12,10 +12,10 @@
     clear: both;
 }
 
-/********************************************************
-* DEBUG *
-*********************************************************/
-/* .debug .navmenu{
+/* #region ***DEBUG***
+*/
+
+.debug .navmenu{
     height: 100px;
     background: aqua;
 }
@@ -98,8 +98,8 @@
 .debug .lang{
     height: 200px;
     background: blueviolet;
-} */
-
+}
+/* #endregion **********DEBUG********** */
 
 /********************************************************
 * UTILITY *
@@ -158,27 +158,8 @@ div[class^="col_"] > img{
     width: 15%;
 }
 .gray_txt{
-    color:gray;
+    color: #6d6d6d;
 }
-div.border_bot:empty{
-    width:4rem;
-}
-/* #region Buttons */
-.btn{
-    padding: .6rem 2rem;
-    text-align: center;
-}
-.btn_blue{
-    background-color: #2562FD;
-    color: white;
-}
-.btn_outline{
-    border: 1px solid black;
-}
-.btn_white{
-    background-color: white;
-}
-/* #endregion Buttons */
 
 .circle{
     width: 25px;
@@ -200,10 +181,28 @@ div.border_bot:empty{
     text-decoration: underline;
     color: #2562FD;
 }
+div.border_bot:empty{
+    width:4rem;
+}
 .border_bot{
     border-bottom: 1.5px solid lightgray;
 }
-
+/* #region Buttons */
+.btn{
+    padding: .6rem 2rem;
+    text-align: center;
+}
+.btn_blue{
+    background-color: #2562FD;
+    color: white;
+}
+.btn_outline{
+    border: 1px solid black;
+}
+.btn_white{
+    background-color: white;
+}
+/* #endregion Buttons */
 /* #region icons */
 ::marker,::before{
     font-family: "Font Awesome 5 Free";
@@ -479,7 +478,6 @@ section.teams{
 }
 
 
-
 /* frequently asked section (4) */
 .question{
     margin: 4rem 0 15%;
@@ -527,9 +525,6 @@ section.teams{
     display: inline-block;
     padding: 5% 0;
     border-top: 2px solid #6d6d6d;
-}
-.lang>*{
-    color: #6d6d6d;
 }
 .lang > span{
     font-weight: 600;
