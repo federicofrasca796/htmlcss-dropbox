@@ -212,6 +212,7 @@ div.border_bot:empty{
         background-color: rgb(220, 220, 220);
     }
     /* #endregion Bonus */
+
 /* #endregion Buttons */
 /* #region icons */
 ::marker,::before{
@@ -279,6 +280,9 @@ a{
     display: inline-block;
     text-decoration: none;
 }
+ul{
+    list-style: none;
+}
 p,a,li{
     font-size: 21px;
 }
@@ -303,7 +307,6 @@ ul i{
     width:50%;
 }
 .nav_list{
-    list-style: none;
     margin: auto -2%;
 }
 .nav_list > li{
@@ -318,7 +321,6 @@ ul i{
 }
 .logo>img{
     vertical-align: sub;
-    width: 100%;
 }
 .nav_list > li .btn{
     display: inline;
@@ -328,6 +330,30 @@ ul i{
         box-sizing: content-box;
         padding-bottom: -5px;
         border-bottom: 5px solid #2562FD;
+
+    }
+
+
+    .dropdown{
+        position: relative;
+    }
+    .dropdown_content{
+        display: none;
+        padding: 0 1.5rem 1rem;
+        width: 250px;
+        line-height: 2rem;
+        background-color: white;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 3px 10px 15px 0px rgb(0 0 0 / 20%);
+        position: absolute;
+        top:100px;
+        right:0;
+    }
+    .dropdown_content > li{
+        padding: 1rem 0;
+    }
+    .dropdown:hover .dropdown_content{
+        display: inline-block;
     }
     /* #endregion Bonus */
 
@@ -547,7 +573,6 @@ section.teams{
     color: white;
 }
 #site_footer li{
-    list-style: none;
     line-height: 200%;
 }
 .links{
