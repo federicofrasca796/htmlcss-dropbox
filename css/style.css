@@ -486,7 +486,7 @@ section.teams{
     padding: 2rem 0;
     position:relative;
 }
-.question > h3{
+.question > h4{
     display: inline-block;
     max-width:90%;
 }
@@ -499,6 +499,9 @@ section.teams{
     top: 50%;
     transform: translateY(-50%);
 }
+    /* #region Bonus */
+    
+    /* #endregion Bonus */
 
 /********************************************************
 * FOOTER *
