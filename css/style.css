@@ -318,6 +318,7 @@ ul i{
 }
 .logo>img{
     vertical-align: sub;
+    width: 100%;
 }
 .nav_list > li .btn{
     display: inline;
