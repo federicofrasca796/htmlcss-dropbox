@@ -323,6 +323,13 @@ ul i{
 .nav_list > li .btn{
     display: inline;
 }
+    /* #region Bonus */
+    .nav_list>li:not([class]):hover{
+        box-sizing: content-box;
+        padding-bottom: -5px;
+        border-bottom: 5px solid #2562FD;
+    }
+    /* #endregion Bonus */
 
 /* jumbo */
 .jumbotron{
