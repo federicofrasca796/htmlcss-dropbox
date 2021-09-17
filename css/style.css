@@ -195,6 +195,8 @@ div.border_bot:empty{
 .btn_blue{
     background-color: #2562FD;
     color: white;
+    /* bonus */
+    transition: background-color .15s ;
 }
 .btn_outline{
     border: 1px solid black;
@@ -203,9 +205,11 @@ div.border_bot:empty{
     background-color: white;
 }
     /* #region Bonus */
-    .btn_blue:hover,
-    .btn_white:hover{
-        backdrop-filter: brightness(1.5);
+    .btn_blue:hover{
+        background-color: #4678f5;
+    }
+    .btn_white:hover, .btn_white:hover{
+        background-color: rgb(220, 220, 220);
     }
     /* #endregion Bonus */
 /* #endregion Buttons */
